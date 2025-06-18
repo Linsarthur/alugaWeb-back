@@ -1,7 +1,8 @@
 
 import { Router } from "express";
 import { buscarUsuarioPorId, buscarUsuarios, criarUsuario, deletarUsuarios, editarUsuarios } from "../controller/usuariosController.js";
-import { verificarToken } from "../src/utils/index.js";
+import { verificarToken } from './../utils/index.js';
+
 const router = Router();
 
 router.get('/', verificarToken, async (req, res) => {
