@@ -113,7 +113,7 @@ export async function criarImovel(req) {
                 imovel_modalidade: pegarString(fields.imovel_modalidade),
                 imovel_valor: pegarString(fields.imovel_valor),
                 imovel_valor_condominio: fields.imovel_valor_condominio ? pegarString(fields.imovel_valor_condominio) : null,
-                imovel_imagem: 'http://localhost:8000/uploads/imoveis/' + newFilename,
+                imovel_imagem: 'https://alugaweb-back.onrender.com/uploads/imoveis/' + newFilename,
                 imovel_descricao: pegarString(fields.imovel_descricao),
                 imovel_quartos: Number(pegarString(fields.imovel_quartos)),
                 imovel_garagens: Number(pegarString(fields.imovel_garagens)),
