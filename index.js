@@ -26,10 +26,10 @@ app.post("/login", async (req, res) => {
 
 
 
-app.use("/usuarios", usuariosRoutes)
+app.use("/usuarios", verificarToken, usuariosRoutes)
 
 app.use("/imoveis", verificarToken, imoveisRoutes)
-app.use('/favoritos', favoritosRoutes);
+app.use('/favoritos',verificarToken, favoritosRoutes);
 app.use((req, res) => {
     res.status(404).send("Rota não encontrada")
 })
