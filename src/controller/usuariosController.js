@@ -91,7 +91,7 @@ export async function criarUsuario(req, res) {
                 usuario_telefone: pegarString(fields.usuario_telefone),
                 usuario_nascimento: pegarString(fields.usuario_nascimento),
                 usuario_nivel: nivelInt,
-                usuario_imagem: 'http://localhost:8000/uploads/imoveis/' + newFilename
+                usuario_imagem: 'https://alugaweb-back.onrender.com/uploads/imoveis/' + newFilename
             }
         });
 
